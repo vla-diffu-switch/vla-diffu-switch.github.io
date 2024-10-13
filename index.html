@@ -248,31 +248,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            To advance autonomous dexterous manipulation, we propose a hybrid control method that combines the relative advantages 
+            of a fine-tuned Vision-Language-Action (VLA) model and diffusion models. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            The VLA model provides language commanded high-level planning, which is highly generalizable,
+            while the diffusion model handles low-level interactions which offers the precision and robustness 
+            required for specific objects and environments. By incorporating a switching signal into the 
+            training-data, we enable event based transitions between these two models for a pick-and-place task
+            where the target object and placement location is commanded through language. 
+            This approach is deployed on our anthropomorphic ADAPT Hand 2, a 13DoF robotic hand, 
+            which incorporates compliance through series elastic actuation allowing for resilience for any interactions: 
+            showing the first use of a multi-fingered hand controlled with a VLA model. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We demonstrate this model switching approach results in a over 80% success rate compared to under 40% when only 
+            using a VLA model, enabled by accurate near-object arm motion by the VLA model and a multi-modal grasping 
+            motion with error recovery abilities from the diffusion model.
           </p>
         </div>
       </div>
