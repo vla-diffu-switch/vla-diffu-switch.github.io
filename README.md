@@ -1,4 +1,4 @@
-# N
+# Combined Vision-Language-Action Model & Diffusion Policy
 If you find this project useful for your work please cite:
 ```
 @article{xxxx
