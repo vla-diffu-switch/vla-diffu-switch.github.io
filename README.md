@@ -1,10 +1,10 @@
 # Nerfies
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [website](https://cyber-alligater.github.io/vla_diff_web/).
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
+@article{xxxx
   author    = {Cheng Pan, Kai Junge, Josie Huhges},
   title     = {Vision-Language-Action Model and Diffusion Policy Switching Enables Dexterous Control of an Anthropomorphic Hand},
   journal   = {xxxx},
