@@ -1,7 +1,4 @@
-# Nerfies
-
-This is the repository that contains source code for the [website](https://cyber-alligater.github.io/vla_diff_web/).
-
+# N
 If you find this project useful for your work please cite:
 ```
 @article{xxxx
