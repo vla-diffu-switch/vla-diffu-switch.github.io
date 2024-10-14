@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [website](https://cyber-alligater.github.io/vla_diff_web/).
 
-If you find Nerfies useful for your work please cite:
+If you find this project useful for your work please cite:
 ```
 @article{xxxx
   author    = {Cheng Pan, Kai Junge, Josie Huhges},
