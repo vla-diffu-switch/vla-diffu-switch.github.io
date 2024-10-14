@@ -210,7 +210,7 @@
 <section class="section no_top_pad">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-11 is-offset-1">
+      <div class="column is-full">
         <br>
         <h2 class="title is-3">Teleoperation</h2>
         <div class="content has-text-justified">
@@ -219,6 +219,30 @@
             (a) Left) Robot setup for gathering training-data through teleoperation, showing the use of the Vision pro, 
             and the location of the two cameras for capturing training data. Right) The test objects and environment used for data-capture and testing. 
             (b) ADAPT Hand 2, highlighting the soft continuous skin, compliant series elastic finger joints, and the anatomically driven design.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section no_top_pad">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 class="title is-3">Model Training</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/training_model.png" style="width: 100%; margin-bottom: 15px; margin-top: 10px;" class="is-centered" >
+          <p>            
+            The VLA model is fine-tuned based the pre-trained openVLA model on the dataset excluding the grasping periods. 
+            Instead of using images from a single camera as shown originally, we combine two images from cam1 and cam2. 
+            The two images are resized to 224x144 ad 224x80, to then be vertically concatenated into a single image. 
+            The fine-tuning continues until the training action accuracy exceed 95% and converges. 
+            The fine-tuning is loaded on a cluster virtual machine with a single A100-80GB. 
+            The training of diffusion policy model is based on the collected grasping demonstration. 
+            The model is trained for 1500 epochs on a custom GPU.
           </p>
         </div>
       </div>
