@@ -169,6 +169,51 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            To advance autonomous dexterous manipulation, we propose a hybrid control method that combines the relative advantages 
+            of a fine-tuned Vision-Language-Action (VLA) model and diffusion models. 
+          </p>
+          <p>
+            The VLA model provides language commanded high-level planning, which is highly generalizable,
+            while the diffusion model handles low-level interactions which offers the precision and robustness 
+            required for specific objects and environments. By incorporating a switching signal into the 
+            training-data, we enable event based transitions between these two models for a pick-and-place task
+            where the target object and placement location is commanded through language. 
+            This approach is deployed on our anthropomorphic ADAPT Hand 2, a 13DoF robotic hand, 
+            which incorporates compliance through series elastic actuation allowing for resilience for any interactions: 
+            showing the first use of a multi-fingered hand controlled with a VLA model. 
+          </p>
+          <p>
+            We demonstrate this model switching approach results in a over 80% success rate compared to under 40% when only 
+            using a VLA model, enabled by accurate near-object arm motion by the VLA model and a multi-modal grasping 
+            motion with error recovery abilities from the diffusion model.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/s8aLcmAqhRI?si=U3cDIu-FXDrDDIIP" 
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+  
 
 <section class="section no_top_pad">
   <div class="container is-max-desktop">
@@ -176,7 +221,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
-          <img src="./static/images/overview.png" style="width: 95%; margin-bottom: 15px; margin-top: 10px;" class="is-centered" >
+          <img src="./static/images/overview.png"    alt=""  style="display: block; width: 95%; margin-left: auto; margin-right: auto" >
           <p>            
             (a) Combined VLA and Diffusion policy approach for dexterous manipulation which uses an event signal σ to transition between the different models, 
              enabling text input to be translated to hand and wrist commands for a anthropomorphic manipulator. 
@@ -228,54 +273,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-  
-  
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            To advance autonomous dexterous manipulation, we propose a hybrid control method that combines the relative advantages 
-            of a fine-tuned Vision-Language-Action (VLA) model and diffusion models. 
-          </p>
-          <p>
-            The VLA model provides language commanded high-level planning, which is highly generalizable,
-            while the diffusion model handles low-level interactions which offers the precision and robustness 
-            required for specific objects and environments. By incorporating a switching signal into the 
-            training-data, we enable event based transitions between these two models for a pick-and-place task
-            where the target object and placement location is commanded through language. 
-            This approach is deployed on our anthropomorphic ADAPT Hand 2, a 13DoF robotic hand, 
-            which incorporates compliance through series elastic actuation allowing for resilience for any interactions: 
-            showing the first use of a multi-fingered hand controlled with a VLA model. 
-          </p>
-          <p>
-            We demonstrate this model switching approach results in a over 80% success rate compared to under 40% when only 
-            using a VLA model, enabled by accurate near-object arm motion by the VLA model and a multi-modal grasping 
-            motion with error recovery abilities from the diffusion model.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/s8aLcmAqhRI?si=U3cDIu-FXDrDDIIP" 
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
