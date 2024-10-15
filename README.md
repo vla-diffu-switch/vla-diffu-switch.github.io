@@ -1,5 +1,5 @@
 # Combined Vision-Language-Action Model & Diffusion Policy
-If you find [this project](https://cyber-alligater.github.io/vla_diff_web/) useful for your work please cite:
+If you find [this project](https://ch-engpan.github.io/vla_diff/) useful for your work please cite:
 
 If you find Nerfies usefu
 ```
