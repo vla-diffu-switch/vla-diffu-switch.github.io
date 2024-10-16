@@ -257,12 +257,13 @@
         <div class="content has-text-justified">
           <img src="./static/images/training_model.png"   alt=""  style="display: block; width: 75%; margin-left: auto; margin-right: auto" >
           <p>            
-            The VLA model is fine-tuned based the pre-trained openVLA model on the dataset excluding the grasping periods. 
+            The VLA model is fine-tuned based the pre-trained <a href="https://openvla.github.io/" target="_blank">openVLA</a> model 
+            on the dataset excluding the grasping periods. 
             Instead of using images from a single camera as shown originally, we combine two images from cam1 and cam2. 
             The two images are resized to 224x144 ad 224x80, to then be vertically concatenated into a single image. 
             The fine-tuning continues until the training action accuracy exceed 95% and converges. 
             The fine-tuning is loaded on a cluster virtual machine with a single A100-80GB. 
-            The training of diffusion policy model is based on the collected grasping demonstration. 
+            The training of a <a href=" https://diffusion-policy.cs.columbia.edu/">diffusion policy</a> model is based on the collected grasping demonstration. 
             The model is trained for 1500 epochs on a custom GPU.
           </p>
         </div>
